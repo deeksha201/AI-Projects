@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-chatbot
+    env: python
+    plan: free
+    buildCommand: pip install -r Day-4/project/requirements.txt
+    startCommand: cd Day-4/project && python app.py
+    envVars:
+      - key: PORT
+        value: 10000
