@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <div class="app-shell">
+        <div class="panel">
+            <div class="panel-header">
+                <div>
+                    <h1>AI Chatbot</h1>
+                    <p>Ask me anything!</p>
+                    <span class="status-pill">⚡ Live • responsive</span>
+                </div>
+                <button id="themeToggle" class="theme-toggle" type="button">🌙</button>
+            </div>
+
+            <div class="input-row">
+                <input type="text" id="message" placeholder="Type your question here...">
+                <button id="submitBtn" type="button" onclick="sendMessage()">Submit</button>
+            </div>
+
+            <div id="chat" class="chat-window" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
